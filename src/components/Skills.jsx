@@ -8,11 +8,11 @@ import Tailwind from "../assets/tailwind.png";
 
 const Skills = () => {
   return (
-    <div name="Skills" className="bg-[#97A275] text-[#FFD5BA]">
+    <div name="Skills" className="bg-[#97A275] text-[#FFD5BA] pt-8  ">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full  ">
         <div>
-          <p className="text-4xl  font-bold  border-b-4 inline border-[#F2711B]">
+          <p className="text-4xl   font-bold  border-b-4 inline border-[#F2711B]">
             Experience / Skills
           </p>
           <p className="py-4 text-xl font-bold ">
