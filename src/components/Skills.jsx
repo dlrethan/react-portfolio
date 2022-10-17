@@ -20,7 +20,7 @@ const Skills = () => {
           </p>
         </div>
         {/* container for icons */}
-        <div className="w-full  grid grid-cols-2 sm:grid-cols-6 gap-4 text-center font-bold text-lg py-14 ">
+        <div className="w-full  grid grid-cols-2 sm:grid-cols-3 gap-4 text-center font-bold text-lg py-14 ">
           <div className=" my-10 hover:scale-105 duration-300">
             <img
               className="w-20 mx-auto"
