@@ -5,6 +5,7 @@ const Contact = () => {
     <div
       name="Contact"
       className="w-full h-screen bg-[#97A275] text-[#FFD5BA] flex justify-center items-center p-4"
+      id = "Cont"
     >
       <form
         method="post"
