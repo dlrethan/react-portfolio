@@ -2,6 +2,7 @@ import React from "react";
 import FightingGame from "../assets/fightingGame.png";
 import PassGen from "../assets/passwordGen.png";
 import Quiz from "../assets/quiz.png";
+import CheapGame from "../assets/cheapGameFinder.png";
 
 const Work = () => {
   return (
@@ -66,21 +67,21 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${Quiz})` }}
+            style={{ backgroundImage: `url(${CheapGame})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* hover */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-[#F2711B] tracking-wide">
-                JavaScript, HTML, CSS
+                JavaScript, HTML, Tailwind
               </span>
               <div>
-                <a href="https://dlrethan.github.io/javascript-quiz/">
+                <a href="https://dlrethan.github.io/Project-1/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#F2711B]  font-bold text-2xl">
                     Live App
                   </button>
                 </a>
-                <a href="https://github.com/dlrethan/javascript-quiz">
+                <a href="https://github.com/dlrethan/Project-1">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#F2711B] font-bold text-2xl">
                     Code
                   </button>
