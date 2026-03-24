@@ -123,7 +123,8 @@ const Contact = () => {
         </div>
 
         {/* Form */}
-        <form className={`reveal${inView ? " is-visible" : ""}`} style={{ transitionDelay: "0.12s" }}
+        <div className={`reveal${inView ? " is-visible" : ""}`} style={{ transitionDelay: "0.12s" }}>
+        <form
           method="post"
           action="https://getform.io/f/86f7f373-8484-4b3d-a401-170ae8c39332"
           style={{ display: "flex", flexDirection: "column", gap: "36px" }}
@@ -152,6 +153,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
+        </div>
       </div>
     </div>
   );
