@@ -38,7 +38,7 @@ const Contact = () => {
         style={{
           maxWidth:  "620px",
           width:     "100%",
-          padding:   "100px 48px",
+          padding:   "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 48px)",
           position:  "relative",
           zIndex:    1,
         }}
@@ -92,7 +92,7 @@ const Contact = () => {
           </a>
 
           {/* Secondary action buttons */}
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "4px" }}>
             <a
               href="https://www.linkedin.com/in/ethan-de-la-rosa-65422024b/"
               target="_blank"

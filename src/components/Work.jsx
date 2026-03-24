@@ -85,7 +85,7 @@ const Work = () => {
         style={{
           maxWidth:  "1200px",
           margin:    "0 auto",
-          padding:   "100px 48px",
+          padding:   "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 48px)",
           width:     "100%",
           position:  "relative",
           zIndex:    1,

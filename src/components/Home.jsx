@@ -47,7 +47,7 @@ const Home = () => {
         style={{
           maxWidth: "1100px",
           margin:   "0 auto",
-          padding:  "0 48px",
+          padding:  "0 clamp(20px, 5vw, 48px)",
           width:    "100%",
         }}
       >
@@ -71,7 +71,7 @@ const Home = () => {
           className="fade-up d-200"
           style={{
             fontFamily:    "'Cormorant Garamond', serif",
-            fontSize:      "clamp(58px, 10vw, 120px)",
+            fontSize:      "clamp(46px, 10vw, 120px)",
             fontWeight:    600,
             lineHeight:    1.0,
             letterSpacing: "-0.02em",
@@ -87,7 +87,7 @@ const Home = () => {
           className="fade-up d-300"
           style={{
             fontFamily:    "'Cormorant Garamond', serif",
-            fontSize:      "clamp(58px, 10vw, 120px)",
+            fontSize:      "clamp(46px, 10vw, 120px)",
             fontWeight:    600,
             fontStyle:     "italic",
             lineHeight:    1.0,

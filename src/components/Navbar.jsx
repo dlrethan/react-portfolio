@@ -34,7 +34,7 @@ const Navbar = () => {
           display:      "flex",
           alignItems:   "center",
           justifyContent: "space-between",
-          padding:      "0 48px",
+          padding:      "0 clamp(20px, 4vw, 48px)",
           background:   scrolled ? "rgba(245,240,232,0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(14px)" : "none",
           borderBottom: scrolled

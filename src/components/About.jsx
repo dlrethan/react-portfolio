@@ -23,7 +23,7 @@ const About = () => {
         style={{
           maxWidth:  "1100px",
           margin:    "0 auto",
-          padding:   "100px 48px",
+          padding:   "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 48px)",
           width:     "100%",
           position:  "relative",
           zIndex:    1,
@@ -47,7 +47,7 @@ const About = () => {
         </div>
 
         {/* Two-column grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
           {/* Left */}
           <div>
             <h2

@@ -71,7 +71,7 @@ const Skills = () => {
         style={{
           maxWidth:  "1100px",
           margin:    "0 auto",
-          padding:   "100px 48px",
+          padding:   "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 48px)",
           width:     "100%",
           position:  "relative",
           zIndex:    1,
@@ -125,7 +125,7 @@ const Skills = () => {
 
         {/* Grid — 2 cols mobile, 3 sm, 4 lg */}
         <div
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           style={{ gap: "2px", background: "rgba(26,20,16,0.05)" }}
         >
           {SKILLS.map((skill) => (
