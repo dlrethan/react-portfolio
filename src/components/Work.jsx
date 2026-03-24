@@ -1,4 +1,5 @@
 import React from "react";
+import useInView from "../hooks/useInView";
 
 const PROJECTS = [
   {
@@ -64,6 +65,7 @@ const PROJECTS = [
 ];
 
 const Work = () => {
+  const [ref, inView] = useInView();
   return (
     <div
       name="Work"
@@ -92,7 +94,7 @@ const Work = () => {
         }}
       >
         {/* Section label */}
-        <div style={{ marginBottom: "64px" }}>
+        <div ref={ref} className={`reveal${inView ? " is-visible" : ""}`} style={{ marginBottom: "64px" }}>
           <p
             style={{
               fontFamily:    "'JetBrains Mono', monospace",
@@ -122,7 +124,7 @@ const Work = () => {
         </div>
 
         {/* Project grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" style={{ gap: "2px", background: "rgba(26,20,16,0.08)" }}>
+        <div className={`reveal${inView ? " is-visible" : ""} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3`} style={{ gap: "2px", background: "rgba(26,20,16,0.08)", transitionDelay: "0.12s" }}>
           {PROJECTS.map((p) => (
             <div
               key={p.num}

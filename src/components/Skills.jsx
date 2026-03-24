@@ -1,4 +1,5 @@
 import React from "react";
+import useInView from "../hooks/useInView";
 import { SiNodedotjs, SiExpress, SiMysql, SiMongodb } from "react-icons/si";
 import Css        from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
@@ -50,6 +51,7 @@ const SkillIcon = ({ skill }) => {
 };
 
 const Skills = () => {
+  const [ref, inView] = useInView();
   return (
     <div
       name="Skills"
@@ -78,7 +80,7 @@ const Skills = () => {
         }}
       >
         {/* Section label */}
-        <div style={{ marginBottom: "64px" }}>
+        <div ref={ref} className={`reveal${inView ? " is-visible" : ""}`} style={{ marginBottom: "64px" }}>
           <p
             style={{
               fontFamily:    "'JetBrains Mono', monospace",
@@ -125,8 +127,8 @@ const Skills = () => {
 
         {/* Grid — 2 cols mobile, 3 sm, 4 lg */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-          style={{ gap: "2px", background: "rgba(26,20,16,0.05)" }}
+          className={`reveal${inView ? " is-visible" : ""} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`}
+          style={{ gap: "2px", background: "rgba(26,20,16,0.05)", transitionDelay: "0.12s" }}
         >
           {SKILLS.map((skill) => (
             <div key={skill.name} className="skill-card">

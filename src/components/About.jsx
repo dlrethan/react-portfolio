@@ -1,7 +1,9 @@
 import React from "react";
 import { HiAcademicCap } from "react-icons/hi";
+import useInView from "../hooks/useInView";
 
 const About = () => {
+  const [ref, inView] = useInView();
   return (
     <div
       name="About"
@@ -30,7 +32,7 @@ const About = () => {
         }}
       >
         {/* Section label */}
-        <div style={{ marginBottom: "64px" }}>
+        <div ref={ref} className={`reveal${inView ? " is-visible" : ""}`} style={{ marginBottom: "64px" }}>
           <p
             style={{
               fontFamily:    "'JetBrains Mono', monospace",
@@ -47,7 +49,7 @@ const About = () => {
         </div>
 
         {/* Two-column grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
+        <div className={`reveal${inView ? " is-visible" : ""} grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24`} style={{ transitionDelay: "0.1s" }}>
           {/* Left */}
           <div>
             <h2

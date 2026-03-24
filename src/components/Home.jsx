@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import NowBuilding from "./NowBuilding";
 
 const Home = () => {
   return (
@@ -132,6 +133,11 @@ const Home = () => {
               View My Work <HiArrowNarrowRight />
             </button>
           </Link>
+        </div>
+
+        {/* Live indicator */}
+        <div className="fade-up d-700">
+          <NowBuilding />
         </div>
       </div>
     </div>

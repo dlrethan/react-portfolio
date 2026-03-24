@@ -1,8 +1,10 @@
 import React from "react";
+import useInView from "../hooks/useInView";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Contact = () => {
+  const [ref, inView] = useInView();
   return (
     <div
       name="Contact"
@@ -44,7 +46,7 @@ const Contact = () => {
         }}
       >
         {/* Section label */}
-        <div style={{ marginBottom: "52px" }}>
+        <div ref={ref} className={`reveal${inView ? " is-visible" : ""}`} style={{ marginBottom: "52px" }}>
           <p
             style={{
               fontFamily:    "'JetBrains Mono', monospace",
@@ -121,7 +123,7 @@ const Contact = () => {
         </div>
 
         {/* Form */}
-        <form
+        <form className={`reveal${inView ? " is-visible" : ""}`} style={{ transitionDelay: "0.12s" }}
           method="post"
           action="https://getform.io/f/86f7f373-8484-4b3d-a401-170ae8c39332"
           style={{ display: "flex", flexDirection: "column", gap: "36px" }}
