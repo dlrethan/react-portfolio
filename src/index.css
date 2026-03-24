@@ -5,20 +5,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@300;400;500&display=swap");
 
 :root {
-  --bg: #0d0d0d;
-  --surface: #151515;
-  --cream: #f0ead6;
-  --cream-dim: #8a8278;
-  --gold: #c8a96e;
-  --gold-dim: rgba(200, 169, 110, 0.25);
-  --border: rgba(200, 169, 110, 0.1);
-  --muted: #524e49;
+  --bg:        #F5F0E8;                     /* warm parchment */
+  --surface:   #EDE7DA;                     /* deeper cream   */
+  --cream:     #1A1410;                     /* primary ink    */
+  --cream-dim: #5A5248;                     /* secondary ink  */
+  --gold:      #B84C1C;                     /* burnt sienna   */
+  --gold-dim:  rgba(184, 76, 28, 0.14);
+  --border:    rgba(26, 20, 16, 0.1);
+  --muted:     #9A908A;
 }
 
 /* ---- Base ---- */
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--bg);
@@ -73,7 +71,7 @@ body {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  opacity: 0.028;
+  opacity: 0.02;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 9990;
@@ -88,11 +86,6 @@ body {
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
-}
-
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(0); }
 }
 
 .fade-up {
@@ -120,14 +113,14 @@ body {
   font-weight: 700;
   font-size: clamp(120px, 20vw, 220px);
   color: transparent;
-  -webkit-text-stroke: 1px rgba(200, 169, 110, 0.065);
+  -webkit-text-stroke: 1px rgba(26, 20, 16, 0.055);
   line-height: 1;
   pointer-events: none;
   user-select: none;
   z-index: 0;
 }
 
-/* ---- Gold divider ---- */
+/* ---- Accent divider ---- */
 .gold-line {
   height: 1px;
   background: linear-gradient(90deg, var(--gold), transparent);
@@ -177,59 +170,17 @@ body {
 }
 
 .skill-card:hover {
-  border-color: rgba(200, 169, 110, 0.35);
+  border-color: rgba(184, 76, 28, 0.3);
   transform: translateY(-3px);
 }
 
-.skill-card:hover::after {
-  width: 100%;
-}
+.skill-card:hover::after { width: 100%; }
 
 /* ---- Project cards ---- */
 .project-card {
   position: relative;
   overflow: hidden;
-  background: var(--surface);
-}
-
-.project-card .card-img-wrap {
-  overflow: hidden;
-  height: 230px;
-}
-
-.project-card .card-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(25%);
-  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
-}
-
-.project-card:hover .card-img-wrap img {
-  transform: scale(1.06);
-  filter: grayscale(0%);
-}
-
-.project-card .card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(13, 13, 13, 0.97) 0%,
-    rgba(13, 13, 13, 0.4) 55%,
-    transparent 100%
-  );
-  transition: background 0.4s ease;
-  pointer-events: none;
-}
-
-.project-card:hover .card-overlay {
-  background: linear-gradient(
-    to top,
-    rgba(13, 13, 13, 1) 0%,
-    rgba(13, 13, 13, 0.75) 55%,
-    rgba(13, 13, 13, 0.2) 100%
-  );
+  background: #141210;
 }
 
 .project-card .card-actions {
@@ -276,9 +227,7 @@ body {
   border-color: var(--gold);
 }
 
-.btn-ghost:hover::before {
-  transform: translateX(0);
-}
+.btn-ghost:hover::before { transform: translateX(0); }
 
 .btn-ghost-sm {
   padding: 9px 18px;
@@ -289,7 +238,7 @@ body {
 .form-input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(200, 169, 110, 0.15);
+  border-bottom: 1px solid rgba(26, 20, 16, 0.15);
   padding: 14px 0;
   color: var(--cream);
   font-family: 'DM Sans', sans-serif;
@@ -306,13 +255,8 @@ body {
   letter-spacing: 0.08em;
 }
 
-.form-input:focus {
-  border-bottom-color: var(--gold);
-}
-
-textarea.form-input {
-  resize: none;
-}
+.form-input:focus { border-bottom-color: var(--gold); }
+textarea.form-input { resize: none; }
 
 /* ---- Active / in-progress badge ---- */
 @keyframes pulse-ring {
@@ -329,8 +273,8 @@ textarea.form-input {
   display:         flex;
   align-items:     center;
   gap:             7px;
-  background:      rgba(13, 13, 13, 0.75);
-  border:          1px solid rgba(76, 175, 110, 0.25);
+  background:      rgba(0, 0, 0, 0.55);
+  border:          1px solid rgba(76, 175, 110, 0.3);
   padding:         5px 10px 5px 8px;
   backdrop-filter: blur(6px);
 }

@@ -25,7 +25,7 @@ const Home = () => {
           right:        "-5%",
           width:        "55%",
           height:       "80%",
-          background:   "radial-gradient(ellipse at center, rgba(200,169,110,0.04) 0%, transparent 70%)",
+          background:   "radial-gradient(ellipse at center, rgba(184,76,28,0.05) 0%, transparent 70%)",
           pointerEvents: "none",
         }}
       />
@@ -38,7 +38,7 @@ const Home = () => {
           top:        "15%",
           width:      "1px",
           height:     "65%",
-          background: "linear-gradient(to bottom, transparent, rgba(200,169,110,0.08), transparent)",
+          background: "linear-gradient(to bottom, transparent, rgba(26,20,16,0.07), transparent)",
         }}
       />
 

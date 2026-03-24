@@ -35,10 +35,10 @@ const Navbar = () => {
           alignItems:   "center",
           justifyContent: "space-between",
           padding:      "0 48px",
-          background:   scrolled ? "rgba(13,13,13,0.92)" : "transparent",
+          background:   scrolled ? "rgba(245,240,232,0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(14px)" : "none",
           borderBottom: scrolled
-            ? "1px solid rgba(200,169,110,0.08)"
+            ? "1px solid rgba(26,20,16,0.08)"
             : "1px solid transparent",
           transition:   "background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease",
         }}
@@ -86,7 +86,7 @@ const Navbar = () => {
           style={{
             position:       "fixed",
             inset:          0,
-            background:     "rgba(13,13,13,0.97)",
+            background:     "rgba(245,240,232,0.97)",
             backdropFilter: "blur(20px)",
             zIndex:         450,
             display:        "flex",

@@ -18,7 +18,7 @@ const SKILLS = [
   { name: "GitHub",      type: "img",  logo: Github,     sub: "Version Control · CI"        },
   // — Backend —
   { name: "Node.js",     type: "icon", icon: SiNodedotjs, color: "#68a063", sub: "Server · REST · CLI"         },
-  { name: "Express.js",  type: "icon", icon: SiExpress,   color: "#c8a96e", sub: "Routing · Middleware · API"  },
+  { name: "Express.js",  type: "icon", icon: SiExpress,   color: "#1A1410", sub: "Routing · Middleware · API"  },
   { name: "MySQL",       type: "icon", icon: SiMysql,     color: "#4479a1", sub: "Relational · Sequelize ORM"  },
   { name: "MongoDB",     type: "icon", icon: SiMongodb,   color: "#47a248", sub: "NoSQL · Mongoose ODM"        },
   { name: "AWS",         type: "img",  logo: Aws,        sub: "Cloud · S3 · Deploy"         },
@@ -126,7 +126,7 @@ const Skills = () => {
         {/* Grid — 2 cols mobile, 3 sm, 4 lg */}
         <div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
-          style={{ gap: "2px", background: "rgba(200,169,110,0.06)" }}
+          style={{ gap: "2px", background: "rgba(26,20,16,0.05)" }}
         >
           {SKILLS.map((skill) => (
             <div key={skill.name} className="skill-card">

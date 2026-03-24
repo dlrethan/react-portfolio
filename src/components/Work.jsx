@@ -132,7 +132,7 @@ const Work = () => {
         {/* Project grid — 3×2 */}
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-          style={{ gap: "2px", background: "rgba(200,169,110,0.06)" }}
+          style={{ gap: "2px", background: "rgba(26,20,16,0.08)" }}
         >
           {PROJECTS.map((p) => (
             <div
