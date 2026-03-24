@@ -41,7 +41,7 @@ const About = () => {
               margin:        "0 0 14px 0",
             }}
           >
-            01 — About
+            01 · About
           </p>
           <div className="gold-line" style={{ maxWidth: "100px" }} />
         </div>
@@ -76,7 +76,7 @@ const About = () => {
                 margin:     "0 0 28px 0",
               }}
             >
-              Hello — I'm Ethan. Pleasure to meet you. Feel free to explore my work.
+              Hello, I'm Ethan. Pleasure to meet you. Feel free to look around.
             </p>
 
             <div
@@ -96,8 +96,8 @@ const About = () => {
               I want to create projects that make the world a better and more
               convenient place. It's a dream of mine to work on features used by
               millions. I love coding because it reveals the beautiful logic
-              behind how computers work — and the problem-solving process has
-              become a genuine passion.
+              behind how computers work. The problem-solving process has
+              become a genuine passion of mine.
             </p>
 
             <p
@@ -110,7 +110,7 @@ const About = () => {
               }}
             >
               I put countless hours into practicing my craft, building real
-              projects across the full stack — from REST APIs and database
+              projects across the full stack, from REST APIs and database
               schemas to polished React frontends.
             </p>
 
@@ -162,7 +162,7 @@ const About = () => {
                     margin:        0,
                   }}
                 >
-                  UC Riverside Extension · 2022–2023
+                  UC Riverside Extension · 2022 to 2023
                 </p>
               </div>
             </div>

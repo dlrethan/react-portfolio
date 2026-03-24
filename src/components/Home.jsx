@@ -121,8 +121,8 @@ const Home = () => {
           }}
         >
           Passionate about building functional, responsive full-stack web
-          applications. Trained at UCR bootcamp — turning complex problems
-          into elegant solutions.
+          applications. Trained at the UCR bootcamp, I love turning complex
+          problems into clean, elegant solutions.
         </p>
 
         {/* CTA */}

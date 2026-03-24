@@ -5,7 +5,7 @@ const PROJECTS = [
   {
     num:      "01",
     title:    "Iron Room",
-    desc:     "Mobile-first workout tracking app. Log lifts, track PRs, and manage training sessions — all stored client-side.",
+    desc:     "Mobile-first workout tracking app. Log lifts, track PRs, and manage training sessions with everything stored right in the browser.",
     tech:     "React · Vite · localStorage",
     gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%)",
     accent:   "#4f8ef7",
@@ -61,7 +61,7 @@ const PROJECTS = [
   {
     num:      "06",
     title:    "Social Network API",
-    desc:     "Back-end API for a social network. Users can share thoughts, react to friends' posts, and build a friend list — powered by MongoDB and Mongoose.",
+    desc:     "Back-end API for a social network. Users can share thoughts, react to friends posts, and build a friend list. Built with MongoDB and Mongoose.",
     tech:     "Node.js · Express · MongoDB · Mongoose",
     gradient: "linear-gradient(135deg, #0d1c10 0%, #112618 40%, #0a1e10 100%)",
     accent:   "#47a248",
@@ -111,7 +111,7 @@ const Work = () => {
               margin:        "0 0 14px 0",
             }}
           >
-            03 — Recent Work
+            03 · Recent Work
           </p>
           <h2
             style={{

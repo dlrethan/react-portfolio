@@ -89,7 +89,7 @@ const Skills = () => {
               margin:        "0 0 14px 0",
             }}
           >
-            02 — Experience
+            02 · Experience
           </p>
           <h2
             style={{

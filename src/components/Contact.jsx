@@ -55,7 +55,7 @@ const Contact = () => {
               margin:        "0 0 16px 0",
             }}
           >
-            04 — Contact
+            04 · Contact
           </p>
           <h2
             style={{
