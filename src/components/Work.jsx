@@ -5,21 +5,21 @@ const PROJECTS = [
   {
     num:    "01",
     title:  "Iron Room",
-    desc:   "Mobile-first workout tracking app. Log lifts, track PRs, and manage training sessions with everything stored right in the browser.",
-    tech:   "React · Vite · localStorage",
+    desc:   "Mobile-first workout and nutrition tracking app. Log sets, track PRs, manage a 15-week program, and chart body weight progress. Full Supabase persistence with optimistic UI updates.",
+    tech:   "React 19 · Vite · Supabase · Tailwind CSS v4",
     accent: "#B84C1C",
     code:   "https://github.com/dlrethan/iron-room",
-    live:   null,
+    live:   "https://iron-room.vercel.app",
     active: true,
   },
   {
     num:    "02",
     title:  "Advisor Tracker",
-    desc:   "AI-powered tool for auto service advisors. Paste repair items to generate phone scripts and customer texts across 6 tones, with declined service recovery and CSI reminders.",
-    tech:   "React · AI · JavaScript",
+    desc:   "Real-time repair-order Kanban for Audi Riverside service advisors. AI-generated call scripts via Claude API, follow-up portal, closing-rate reports, and a live manager dashboard.",
+    tech:   "React · Vite · Claude API · Supabase · Tailwind",
     accent: "#B84C1C",
     code:   "https://github.com/dlrethan/advisor-tracker",
-    live:   null,
+    live:   "https://laneiqapp.com",
     active: true,
   },
   {
@@ -230,12 +230,12 @@ const Work = () => {
               {/* Buttons */}
               <div style={{ display: "flex", gap: "8px" }}>
                 {p.live && (
-                  <a href={p.live}>
-                    <button className="btn-ghost btn-ghost-sm">Live ↗</button>
+                  <a href={p.live} target="_blank" rel="noreferrer" className="btn-ghost btn-ghost-sm">
+                    Live ↗
                   </a>
                 )}
-                <a href={p.code}>
-                  <button className="btn-ghost btn-ghost-sm">Code ↗</button>
+                <a href={p.code} target="_blank" rel="noreferrer" className="btn-ghost btn-ghost-sm">
+                  Code ↗
                 </a>
               </div>
             </div>

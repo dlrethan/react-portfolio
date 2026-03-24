@@ -264,6 +264,8 @@ body {
   text-transform: uppercase;
   color: var(--cream-dim);
   background: transparent;
+  text-decoration: none;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: color 0.3s, border-color 0.3s;
