@@ -11,7 +11,7 @@ const PROJECTS = [
     accent:   "#4f8ef7",
     code:     "https://github.com/dlrethan/iron-room",
     live:     null,
-    active:   false,
+    active:   true,
   },
   {
     num:      "02",
