@@ -1,4 +1,6 @@
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -16,12 +18,10 @@ const Contact = () => {
         overflow:        "hidden",
       }}
     >
-      {/* Ghost number */}
       <span className="ghost-num" style={{ top: "-20px", right: "-10px" }}>
         04
       </span>
 
-      {/* Ambient gradient */}
       <div
         style={{
           position:     "absolute",
@@ -59,33 +59,65 @@ const Contact = () => {
           </p>
           <h2
             style={{
-              fontFamily:  "'Cormorant Garamond', serif",
-              fontSize:    "clamp(40px, 7vw, 76px)",
-              fontWeight:  600,
-              fontStyle:   "italic",
-              color:       "var(--cream)",
-              lineHeight:  1.05,
-              margin:      "0 0 20px 0",
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize:   "clamp(40px, 7vw, 76px)",
+              fontWeight: 600,
+              fontStyle:  "italic",
+              color:      "var(--cream)",
+              lineHeight: 1.05,
+              margin:     "0 0 20px 0",
             }}
           >
             Let's Work<br />Together.
           </h2>
-          <div className="gold-line" style={{ maxWidth: "72px", marginBottom: "16px" }} />
+          <div className="gold-line" style={{ maxWidth: "72px", marginBottom: "20px" }} />
+
+          {/* Email */}
           <a
             href="mailto:dlrethan10@gmail.com"
             style={{
-              fontFamily:    "'JetBrains Mono', monospace",
-              fontSize:      "11px",
-              letterSpacing: "0.12em",
-              color:         "var(--muted)",
+              fontFamily:     "'JetBrains Mono', monospace",
+              fontSize:       "11px",
+              letterSpacing:  "0.12em",
+              color:          "var(--muted)",
               textDecoration: "none",
-              transition:    "color 0.2s",
+              display:        "block",
+              marginBottom:   "28px",
+              transition:     "color 0.2s",
             }}
             onMouseEnter={e => (e.currentTarget.style.color = "var(--gold)")}
             onMouseLeave={e => (e.currentTarget.style.color = "var(--muted)")}
           >
             dlrethan10@gmail.com
           </a>
+
+          {/* Secondary action buttons */}
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            <a
+              href="https://www.linkedin.com/in/ethan-de-la-rosa-65422024b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="btn-ghost"
+                style={{ padding: "10px 20px", display: "inline-flex", alignItems: "center", gap: "8px" }}
+              >
+                <FaLinkedin size={13} /> LinkedIn
+              </button>
+            </a>
+            <a
+              href="https://docs.google.com/document/d/13CsNSRS8x5ozH_ytB4znlRz4z5A8gaisWyLx5tPditM/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="btn-ghost"
+                style={{ padding: "10px 20px", display: "inline-flex", alignItems: "center", gap: "8px" }}
+              >
+                <BsFillPersonLinesFill size={13} /> Resume
+              </button>
+            </a>
+          </div>
         </div>
 
         {/* Form */}
@@ -112,7 +144,6 @@ const Contact = () => {
             rows="6"
             placeholder="Your Message"
           />
-
           <div>
             <button type="submit" className="btn-ghost">
               Send Message →
