@@ -176,22 +176,55 @@ body {
 
 .skill-card:hover::after { width: 100%; }
 
-/* ---- Project cards ---- */
-.project-card {
+/* ---- Project cards (light) ---- */
+.project-card-light {
+  background:  var(--surface);
+  border:      1px solid var(--border);
+  padding:     32px 28px;
+  position:    relative;
+  display:     flex;
+  flex-direction: column;
+  transition:  transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
+  overflow:    hidden;
+}
+
+.project-card-light__bar {
+  position:   absolute;
+  top:        0;
+  left:       0;
+  width:      3px;
+  height:     100%;
+  background: var(--border);
+  transition: background 0.3s ease;
+}
+
+.project-card-light:hover {
+  transform:    translateY(-4px);
+  border-color: rgba(184, 76, 28, 0.25);
+}
+
+.project-card-light:hover .project-card-light__bar {
+  background: var(--gold);
+}
+
+/* pulse dot (reused by project cards) */
+.dot-wrap {
   position: relative;
-  overflow: hidden;
-  background: #141210;
+  width:    8px;
+  height:   8px;
 }
 
-.project-card .card-actions {
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
+.dot {
+  position:      absolute;
+  inset:         0;
+  border-radius: 50%;
 }
 
-.project-card:hover .card-actions {
-  opacity: 1;
-  transform: translateY(0);
+.dot-ring {
+  position:      absolute;
+  inset:         0;
+  border-radius: 50%;
+  animation:     pulse-ring 2s ease-out infinite;
 }
 
 /* ---- Btn ghost ---- */
